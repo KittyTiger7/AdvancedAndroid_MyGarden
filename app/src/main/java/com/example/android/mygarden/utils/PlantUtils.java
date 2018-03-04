@@ -22,7 +22,7 @@ import android.content.res.TypedArray;
 
 import com.example.android.mygarden.R;
 
-public class PlantUtils {
+public class  PlantUtils {
 
     private static final long MINUTE_MILLISECONDS = 1000 * 60;
     private static final long HOUR_MILLISECONDS = MINUTE_MILLISECONDS * 60;
