@@ -23,6 +23,8 @@
         action ACTION_WATER_PLANTS which updates last_watered timestamp for all plants still alive -->
         <!-- TODO (3): Add a service tag for PlantWateringService -->
 
+        <service android:name=".provider.PlantWateringService"/>
+
         <provider
             android:name=".provider.PlantContentProvider"
             android:authorities="com.example.android.mygarden"
@@ -36,12 +38,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".ui.PlantDetailActivity"
             android:label="@string/title_activity_plant_detail" />
         <activity
             android:name=".ui.AddPlantActivity"
             android:label="@string/title_activity_add_plant" />
+
+
     </application>
 
 </manifest>
